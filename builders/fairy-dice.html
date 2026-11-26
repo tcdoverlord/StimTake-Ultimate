@@ -25,8 +25,9 @@ button.blue{background:linear-gradient(110deg,#612998,#a04fc5)!important;border-
 .logo{background:linear-gradient(140deg,#ffe6ac,#ad62df)!important;color:#2d1645!important}
 .tag,.pill,.stats span{background:#43235f!important;border-color:#8d5fb0!important;color:#f4d8ff!important}
 .outcome .prize-input{background:#422045!important;border-color:#d6aa6b!important;color:#ffe6ac!important}
-</style><style>.st-builder-nav{display:flex;align-items:center;flex-wrap:wrap;gap:8px;max-width:1520px;margin:0 auto;padding:12px 20px;border-bottom:1px solid #ffffff25;font:700 13px/1.4 'Segoe UI',Arial,sans-serif}.st-builder-nav a{color:#f3edff;text-decoration:none;padding:7px 10px;border:1px solid #ffffff30;border-radius:8px;background:#0003}.st-builder-nav a:hover,.st-builder-nav a:focus-visible{outline:2px solid #ffe078;outline-offset:2px}.st-builder-nav a[aria-current=page]{color:#ffe078;border-color:#ffe078}.st-builder-nav .st-back{margin-right:auto;color:#b7f9d2}@media(max-width:650px){.st-builder-nav{padding:10px}.st-builder-nav .st-back{flex:1 0 100%}}</style></head><body>
-<nav class="st-builder-nav" aria-label="StimTake game builder navigation"><a class="st-back" href="../index.html#game-builders">← StimTake Ultimate</a><a href="monkey-wheel.html">Monkey Lucky Spin</a><a href="monkey-dice.html">Monkey Lucky Dice</a><a href="fairy-wheel.html">Fairy Lucky Spin</a><a href="fairy-dice.html" aria-current="page">Fairy Magic Dice</a></nav>
+</style><style>.st-builder-nav{display:flex;align-items:center;flex-wrap:wrap;gap:8px;max-width:1520px;margin:0 auto;padding:12px 20px;border-bottom:1px solid #ffffff25;font:700 13px/1.4 'Segoe UI',Arial,sans-serif}.st-builder-nav a{color:#f3edff;text-decoration:none;padding:7px 10px;border:1px solid #ffffff30;border-radius:8px;background:#0003}.st-builder-nav a:hover,.st-builder-nav a:focus-visible{outline:2px solid #ffe078;outline-offset:2px}.st-builder-nav a[aria-current=page]{color:#ffe078;border-color:#ffe078}.st-builder-nav .st-back{margin-right:auto;color:#b7f9d2}@media(max-width:650px){.st-builder-nav{padding:10px}.st-builder-nav .st-back{flex:1 0 100%}}</style><link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head><body>
+<nav class="st-builder-nav" aria-label="StimTake game builder navigation"><a class="st-back" href="../index.html#game-builders">← StimTake You</a><a href="monkey-wheel.html">Monkey Lucky Spin</a><a href="monkey-dice.html">Monkey Lucky Dice</a><a href="fairy-wheel.html">Fairy Lucky Spin</a><a href="fairy-dice.html" aria-current="page">Fairy Magic Dice</a></nav><div style="max-width:1200px;margin:10px auto 0;padding:10px 16px;border:1px solid #52745c;border-radius:10px;background:#14241b;color:#d7f3d8;font:14px/1.6 system-ui,sans-serif">Create and test your overlay here, then download the HTML and import it into a StimTake You slot using Import HTML / Media File. <a style="color:#98f59c" href="../obs-setup.html">OBS setup guide →</a></div>
 
 <header><div class="logo">🦋🎲</div><div><h1>FAIRY PACK • MAGIC DICE BUILDER</h1><p>🌙 Customize two violet-and-gold dice • Preview • Export standalone HTML</p></div><span class="pill">Moonlit Dice · Creator Tools</span></header>
 <main>
@@ -37,7 +38,7 @@ button.blue{background:linear-gradient(110deg,#612998,#a04fc5)!important;border-
 <div class="row"><div><label for="palette">Dice game palette</label><select id="palette"><option value="banana">🌙 Moon Rose Gold</option><option value="jungle">🦋 Violet Butterfly</option><option value="tropical">💗 Fairy Blush</option><option value="blue">✨ Starlight</option></select></div><div><label for="duration">Fairy animation</label><select id="duration"><option value="2.4">2.4 seconds</option><option value="3.36" selected>3.36 seconds</option><option value="5">5 seconds</option></select></div></div>
 <h3>🎲 Two six-sided dice — totals 7 to 12</h3>
 <p class="help">Always rolls exactly <b>two dice</b> (violet + gold). Select which totals from <b>7–12</b> are allowed, and write the message shown when each total appears. Natural dice-face probabilities are preserved among the selected totals.</p>
-<p class="help">Set the <b>winning statement</b> and the <b>PRIZE</b> separately. The prize is the largest text viewers see when the dice stop.</p>
+<p class="help">Set the <b>result title</b> and the <b>celebration text</b> separately. The celebration text is the largest text viewers see when the dice stop.</p>
 <div class="stats"><span>🎲 Dice: 2 × D6</span><span>🔢 Available totals: 7–12</span><span id="allowedStats">6 totals enabled</span></div>
 <div id="outcomes"></div>
 <div class="actions"><button id="allBtn">Enable 7–12</button><button id="resetBtn">↺ Restore samples</button></div>
@@ -56,7 +57,7 @@ button.blue{background:linear-gradient(110deg,#612998,#a04fc5)!important;border-
 <div class="pad"><h3>Ready for OBS</h3>
 <p class="instructions">The exported HTML contains the transparent moonlit frame and animated fairy dice GIF <b>inside the file</b>. No separate images or internet connection needed. Add it as a <b>Local File Browser Source</b> in OBS at <b>1920 × 1080</b>. It begins rolling instantly. You can replay it through <code>window.StimTakeDice.roll()</code> or the <code>stimtake-dice-roll</code> trigger message.</p>
 <details><summary style="cursor:pointer;color:#ffdf75;font-weight:900">Show generated HTML code</summary><textarea id="code" class="code" readonly spellcheck="false" aria-label="Generated overlay HTML"></textarea></details>
-</div><div class="footer-notice">💙 Visual entertainment game only. No bets, automatic prize payouts, or token accounting. Two physical-style six-sided dice, with allowed outcomes restricted to the selected totals.</div></section>
+</div><div class="footer-notice">💙 For creative activities and entertainment only. No payments, wagers or automatic rewards. Two physical-style six-sided dice, with allowed outcomes restricted to the selected totals.</div></section>
 </main>
 <script>
 'use strict';
@@ -93,7 +94,7 @@ function renderResults(){
    input.addEventListener('input',()=>{entry[key]=input.value;setDirty()});box.append(l,input);inputs.append(box)
   }
   field('Winning statement (smaller)',entry.title,'title','🦋 FAIRY LUCK!',60);
-  field('🏆 PRIZE (extra large)',entry.prize,'prize','BUTTERFLY BLESSING!',74);
+  field('✨ CELEBRATION TEXT (extra large)',entry.prize,'prize','BUTTERFLY BLESSING!',74);
   field('Small explanation (optional)',entry.message,'message','Short celebratory caption',145,'full');
   row.append(top,inputs);wrap.append(row)
  }
